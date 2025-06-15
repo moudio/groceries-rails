@@ -1,5 +1,6 @@
 class GroceryItemsController < ApplicationController
   before_action :set_grocery_item, only: [ :show, :edit, :update, :destroy ]
+  scope :featured, -> { where(featured: true) }
 
   def index
     @grocery_items = GroceryItem.all.order(created_at: :desc)
@@ -44,6 +45,6 @@ class GroceryItemsController < ApplicationController
   end
 
   def grocery_item_params
-    params.require(:grocery_item).permit(:name, :price, :category, :image_url, :description)
+    params.require(:grocery_item).permit(:name, :price, :category, :image_url, :description, :featured)
   end
 end

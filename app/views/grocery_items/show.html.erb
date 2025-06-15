@@ -34,7 +34,11 @@
       <% end %>
 
       <!-- Call to Action -->
-      <%= link_to "Add to Cart", cart_add_item_path(@grocery_item), method: :post, class: "inline-block bg-green-600 text-white text-lg font-semibold px-8 py-3 rounded-xl hover:bg-green-700 transition" %>
+      <%
+=begin%>
+ <%= link_to "Add to Cart", cart_add_item_path(@grocery_item), method: :post, class: "inline-block bg-green-600 text-white text-lg font-semibold px-8 py-3 rounded-xl hover:bg-green-700 transition" %> 
+<%
+=end%>
     </div>
   </div>
 </section>
