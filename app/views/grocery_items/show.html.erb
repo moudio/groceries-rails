@@ -1,2 +1,40 @@
-<h1>GroceryItems#show</h1>
-<p>Find me in app/views/grocery_items/show.html.erb</p>
+<!-- app/views/grocery_items/show.html.erb -->
+
+<!-- Back Navigation -->
+<div class="bg-white border-b py-4">
+  <div class="container mx-auto px-6 flex items-center text-sm text-gray-600">
+    <%= link_to "← Back to Groceries", grocery_items_path, class: "hover:text-green-600 transition" %>
+  </div>
+</div>
+
+<!-- Item Details -->
+<section class="py-16 bg-gray-50 min-h-screen flex items-center">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+    <!-- Product Image -->
+    <div>
+      <img src="<%= @grocery_item.image_url %>" alt="<%= @grocery_item.name %>" class="w-full h-96 object-cover rounded-2xl shadow-md" />
+    </div>
+
+    <!-- Product Info -->
+    <div class="bg-white rounded-2xl p-8 shadow-md">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2"><%= @grocery_item.name %></h1>
+
+      <!-- Category Tag -->
+      <% if @grocery_item.category.present? %>
+        <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-4"><%= @grocery_item.category %></span>
+      <% end %>
+
+      <!-- Price -->
+      <p class="text-2xl font-extrabold text-green-700 mb-6">FCFA <%= number_to_currency(@grocery_item.price, unit: "", delimiter: " ", precision: 0) %></p>
+
+      <!-- Description -->
+      <% if @grocery_item.description.present? %>
+        <p class="text-gray-700 leading-relaxed mb-8"><%= @grocery_item.description %></p>
+      <% end %>
+
+      <!-- Call to Action -->
+      <%= link_to "Add to Cart", cart_add_item_path(@grocery_item), method: :post, class: "inline-block bg-green-600 text-white text-lg font-semibold px-8 py-3 rounded-xl hover:bg-green-700 transition" %>
+    </div>
+  </div>
+</section>
