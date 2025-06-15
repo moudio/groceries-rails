@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def home
-    @grocery_items = GroceryItem.featured
+    @featured_items = GroceryItem.where(featured: true).order(created_at: :desc).limit(6)
   end
 end

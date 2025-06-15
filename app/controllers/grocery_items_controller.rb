@@ -1,6 +1,5 @@
 class GroceryItemsController < ApplicationController
   before_action :set_grocery_item, only: [ :show, :edit, :update, :destroy ]
-  scope :featured, -> { where(featured: true) }
 
   def index
     @grocery_items = GroceryItem.all.order(created_at: :desc)
