@@ -3,8 +3,10 @@
     <div class="flex h-16 justify-between items-center">
       <!-- Logo and Brand -->
       <div class="flex items-center">
-        <img class="h-8 w-auto" src="https://cdn-icons-png.flaticon.com/512/3081/3081648.png" alt="Grocery Logo" />
-        <span class="ml-2 text-xl font-bold">GroceNow</span>
+      <%= link_to root_path, class: "flex items-center hover:opacity-80 transition" do %>
+            <img class="h-8 w-auto" src="https://cdn-icons-png.flaticon.com/512/3081/3081648.png" alt="Grocery Logo" />
+            <span class="ml-2 text-xl font-bold">GroceNow</span>
+        <% end %>
       </div>
 
       <!-- Desktop Menu -->
