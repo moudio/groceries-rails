@@ -1,9 +1,17 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+GroceryItem.create!(
+  name: "Bananas",
+  description: "Fresh organic bananas from local farms",
+  price: 1.99,
+  stock: 50,
+  image_url: "https://res.cloudinary.com/dg8uazb1f/image/upload/v1749992839/bananas_s2kjpn.png",
+  category: "Fruits"
+)
+
+GroceryItem.create!(
+  name: "Whole Milk",
+  description: "1L fresh full-cream milk",
+  price: 2.49,
+  stock: 30,
+  image_url: "https://res.cloudinary.com/dg8uazb1f/image/upload/v1749993022/milk-min_ieunsg.png",
+  category: "Dairy"
+)

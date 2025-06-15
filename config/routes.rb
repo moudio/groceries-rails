@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get "grocery_items/index"
+  get "grocery_items/show"
+  get "grocery_items/new"
+  get "grocery_items/create"
+  get "grocery_items/edit"
+  get "grocery_items/update"
+  get "grocery_items/destroy"
   devise_for :users
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -14,4 +21,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root "pages#home"
+
+  resources :grocery_items
 end
