@@ -1,24 +1,34 @@
-# README
+# 🥦 GroceNow – Grocery Delivery App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**GroceNow** is a modern grocery delivery platform built with **Ruby on Rails**, **Tailwind CSS**, and **Devise**. It allows users to register, log in, and order fresh groceries straight to their door with a clean and responsive interface.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## 🚀 Features
 
-* System dependencies
+- 🔐 User authentication (sign up, login, logout) via **Devise**
+- 🎨 Beautiful UI with **Tailwind CSS**
+- 📱 Fully responsive for mobile and desktop
+- 🛒 Product browsing and ordering (coming soon)
+- 🧾 Secure session management
+- 🧑‍🍳 Built with scalability and performance in mind
 
-* Configuration
+---
 
-* Database creation
+## 📦 Tech Stack
 
-* Database initialization
+- **Ruby on Rails 7**
+- **Tailwind CSS 3**
+- **Devise** – authentication
+- **PostgreSQL** – production DB
+- **SQLite** – development DB (by default)
 
-* How to run the test suite
+---
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🧑‍💻 Getting Started
 
-* Deployment instructions
+### 1. Clone the Repository
 
-* ...
+```bash
+git clone https://github.com/moudio/grocnow.git
+cd grocnow
