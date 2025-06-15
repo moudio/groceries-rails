@@ -9,7 +9,7 @@
 
       <!-- Desktop Menu -->
       <div class="hidden sm:flex space-x-6">
-        <a href="#" class="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+        <%= link_to "Home", root_path, class: "hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium" %>
         <a href="#" class="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">Shop</a>
         <a href="#" class="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">Orders</a>
         <a href="#" class="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">Support</a>
@@ -17,8 +17,10 @@
 
       <!-- Profile / Login -->
       <div class="hidden sm:flex items-center space-x-4">
-        <button class="bg-white text-green-700 px-4 py-2 rounded-xl text-sm font-semibold hover:bg-gray-100 transition">Log In</button>
-        <img class="h-8 w-8 rounded-full" src="https://cdn-icons-png.flaticon.com/512/706/706830.png" alt="User Avatar">
+       <div class="hidden sm:flex items-center space-x-4">
+            <%= link_to "Log In", new_user_session_path, class: "bg-white text-green-700 px-4 py-2 rounded-xl text-sm font-semibold hover:bg-gray-100 transition" %>
+            <%= image_tag("https://cdn-icons-png.flaticon.com/512/706/706830.png", alt: "User Avatar", class: "h-8 w-8 rounded-full") %>
+        </div>
       </div>
 
       <!-- Mobile menu button -->
@@ -37,8 +39,8 @@
     <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700">Home</a>
     <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700">Shop</a>
     <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700">Orders</a>
-    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700">Support</a>
-    <a href="#" class="block px-3 py-2 mt-2 rounded-xl text-base font-semibold text-green-700 bg-white hover:bg-gray-100">Log In</a>
+    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700">Support</a> 
+    <%= link_to "Log In", new_user_session_path, class: "block w-full text-center px-4 py-2 mt-2 rounded-xl text-base font-semibold text-white bg-green-600 hover:bg-green-700 shadow transition duration-200" %>
   </div>
 
   <script>
