@@ -10,7 +10,8 @@ class PagesController < ApplicationController
     render json: {
       status: "healthy",
       timestamp: Time.current,
-      version: Rails.application.config.version || "1.0.0"
+      environment: Rails.env,
+      version: "1.0.0"
     }
   end
 end
