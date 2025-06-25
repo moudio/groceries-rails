@@ -13,7 +13,9 @@
       <div class="hidden sm:flex space-x-6">
         <%= link_to "Home", root_path, class: "hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium" %>
         <%= link_to "Shop", grocery_items_index_path, class:"hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium"%>
-        <a href="#" class="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">Orders</a>
+        <% if user_signed_in? %>  
+        <%= link_to "Orders", orders_path, class: "hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium" %>
+        <% end %>
         <%= link_to "Support", support_path, class: "hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium" %>
       </div>
       <% if user_signed_in? %>
@@ -42,7 +44,9 @@
   <div id="mobile-menu" class="sm:hidden hidden px-2 pb-3 space-y-1">
     <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700">Home</a>
     <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700">Shop</a>
+    <% if user_signed_in? %>
     <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700">Orders</a>
+    <% end %>
     <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700">Support</a> 
     <%= link_to "Log In", new_user_session_path, class: "block w-full text-center px-4 py-2 mt-2 rounded-xl text-base font-semibold text-white bg-green-600 hover:bg-green-700 shadow transition duration-200" %>
   </div>
