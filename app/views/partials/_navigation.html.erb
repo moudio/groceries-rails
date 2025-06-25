@@ -16,15 +16,17 @@
         <a href="#" class="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">Orders</a>
         <%= link_to "Support", support_path, class: "hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium" %>
       </div>
-
+      <% if user_signed_in? %>
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium" %>
+      <%= image_tag("https://cdn-icons-png.flaticon.com/512/706/706830.png", alt: "User Avatar", class: "h-8 w-8 rounded-full") %>
+      <% else %>
       <!-- Profile / Login -->
       <div class="hidden sm:flex items-center space-x-4">
        <div class="hidden sm:flex items-center space-x-4">
             <%= link_to "Log In", new_user_session_path, class: "bg-white text-green-700 px-4 py-2 rounded-xl text-sm font-semibold hover:bg-gray-100 transition" %>
-            <%= image_tag("https://cdn-icons-png.flaticon.com/512/706/706830.png", alt: "User Avatar", class: "h-8 w-8 rounded-full") %>
         </div>
       </div>
-
+      <% end %>
       <!-- Mobile menu button -->
       <div class="sm:hidden">
         <button id="mobile-menu-button" class="text-white focus:outline-none">

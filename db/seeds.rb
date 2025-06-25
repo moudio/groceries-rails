@@ -48,7 +48,7 @@ GroceryItem.create!(
   price: 3.99,
   stock: 30,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1515589666096-d5d0e1307860?w=400",
+  image_url: "https://images.unsplash.com/photo-1596363505729-4190a9506133?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400",
   category: "Fruits"
 )
 
@@ -59,7 +59,7 @@ GroceryItem.create!(
   price: 1.49,
   stock: 45,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1447175008436-170170753d52?w=400",
+  image_url: "https://plus.unsplash.com/premium_photo-1664277022311-76d875e7cee5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNhcnJvdHRzfGVufDB8fDB8fHww?w=400",
   category: "Vegetables"
 )
 
@@ -195,15 +195,6 @@ GroceryItem.create!(
   category: "Meat"
 )
 
-GroceryItem.create!(
-  name: "Turkey Breast",
-  description: "Sliced turkey breast",
-  price: 5.99,
-  stock: 22,
-  featured: false,
-  image_url: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400",
-  category: "Meat"
-)
 
 # Pantry Items
 GroceryItem.create!(
@@ -252,7 +243,7 @@ GroceryItem.create!(
   price: 3.49,
   stock: 30,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400",
+  image_url: "https://images.unsplash.com/flagged/photo-1625402535207-953e03369f59?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400",
   category: "Pantry"
 )
 
@@ -314,7 +305,7 @@ GroceryItem.create!(
   price: 4.49,
   stock: 30,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+  image_url: "https://images.unsplash.com/photo-1606377695906-236fdfcef767?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400",
   category: "Beverages"
 )
 
@@ -335,7 +326,7 @@ GroceryItem.create!(
   price: 1.99,
   stock: 40,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+  image_url: "https://images.unsplash.com/photo-1578849278619-e73505e9610f?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400",
   category: "Snacks"
 )
 
@@ -356,7 +347,7 @@ GroceryItem.create!(
   price: 4.99,
   stock: 15,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1550258987-190a62d4fa70?w=400",
+  image_url: "https://images.unsplash.com/photo-1490885578174-acda8905c2c6?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dw=400",
   category: "Fruits"
 )
 
@@ -386,7 +377,7 @@ GroceryItem.create!(
   price: 1.99,
   stock: 35,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400",
+  image_url: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400",
   category: "Fruits"
 )
 
@@ -407,7 +398,7 @@ GroceryItem.create!(
   price: 2.99,
   stock: 25,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=400",
+  image_url: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400",
   category: "Vegetables"
 )
 
@@ -427,7 +418,7 @@ GroceryItem.create!(
   price: 1.99,
   stock: 30,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1622205313162-be1d5716a43b?w=400",
+  image_url: "https://images.unsplash.com/photo-1640958904159-51ae08bd3412?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400",
   category: "Vegetables"
 )
 
@@ -447,7 +438,7 @@ GroceryItem.create!(
   price: 1.49,
   stock: 50,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400",
+  image_url: "https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400",
   category: "Vegetables"
 )
 
@@ -482,46 +473,6 @@ GroceryItem.create!(
   category: "Dairy"
 )
 
-# Additional Pantry
-GroceryItem.create!(
-  name: "Black Beans",
-  description: "Canned black beans",
-  price: 1.49,
-  stock: 40,
-  featured: false,
-  image_url: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400",
-  category: "Pantry"
-)
-
-GroceryItem.create!(
-  name: "Chicken Broth",
-  description: "Low sodium chicken broth",
-  price: 2.99,
-  stock: 35,
-  featured: false,
-  image_url: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400",
-  category: "Pantry"
-)
-
-GroceryItem.create!(
-  name: "Flour",
-  description: "All-purpose flour",
-  price: 2.49,
-  stock: 30,
-  featured: false,
-  image_url: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400",
-  category: "Pantry"
-)
-
-GroceryItem.create!(
-  name: "Sugar",
-  description: "Granulated white sugar",
-  price: 1.99,
-  stock: 35,
-  featured: false,
-  image_url: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400",
-  category: "Pantry"
-)
 
 GroceryItem.create!(
   name: "Salt",
@@ -529,7 +480,7 @@ GroceryItem.create!(
   price: 0.99,
   stock: 50,
   featured: false,
-  image_url: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400",
+  image_url: "https://images.unsplash.com/photo-1634612831148-03a8550e1d52?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400",
   category: "Pantry"
 )
 
