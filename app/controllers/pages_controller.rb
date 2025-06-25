@@ -4,6 +4,13 @@ class PagesController < ApplicationController
   end
 
   def support
+  end
 
+  def health
+    render json: {
+      status: "healthy",
+      timestamp: Time.current,
+      version: Rails.application.config.version || "1.0.0"
+    }
   end
 end

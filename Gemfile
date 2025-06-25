@@ -52,6 +52,12 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  # Security vulnerability scanner for gems
+  gem "bundle-audit", require: false
+
+  # Testing framework
+  gem "rspec-rails", require: false
 end
 
 group :development do
