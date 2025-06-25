@@ -2,7 +2,7 @@ class GroceryItemsController < ApplicationController
   before_action :set_grocery_item, only: [ :show, :edit, :update, :destroy ]
 
   def index
-    @grocery_items = GroceryItem.all.order(created_at: :desc)
+    @grocery_items = GroceryItem.all.order(created_at: :desc).page(params[:page]).per(12)
   end
 
   def show
