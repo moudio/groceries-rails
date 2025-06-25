@@ -35,3 +35,29 @@
 ```bash
 git clone https://github.com/moudio/grocnow.git
 cd grocnow
+```
+
+### 2. Install Dependencies
+
+```bash
+bundle install
+```
+
+### 3. Setup Database
+
+```bash
+# Run database migrations
+rails db:migrate
+
+# Seed the database with sample data
+rails db:seed
+```
+
+### 4. Start the Server
+
+```bash
+rails server
+```
+
+Visit `http://localhost:3000` to see the application in action.
+
