@@ -1,16 +1,86 @@
-<h2>Forgot your password?</h2>
-
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<div class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+  <div class="sm:mx-auto sm:w-full sm:max-w-md">
+    <!-- Logo/Brand -->
+    <div class="text-center">
+      <h1 class="text-3xl font-bold text-green-600 mb-2">GroceNow</h1>
+      <h2 class="text-2xl font-semibold text-gray-900">Reset Your Password</h2>
+      <p class="mt-2 text-sm text-gray-600">
+        Enter your email address and we'll send you a link to reset your password.
+      </p>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
+  <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="bg-white py-8 px-4 shadow-xl rounded-2xl sm:px-10">
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: "space-y-6" }) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
 
-<%= render "devise/shared/links" %>
+        <div>
+          <%= f.label :email, class: "block text-sm font-medium text-gray-700 mb-2" do %>
+            Email Address
+            <span class="text-red-500">*</span>
+          <% end %>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+              </svg>
+            </div>
+            <%= f.email_field :email, 
+                autofocus: true, 
+                autocomplete: "email",
+                placeholder: "Enter your email address",
+                class: "appearance-none relative block w-full pl-10 pr-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm" %>
+          </div>
+        </div>
+
+        <div>
+          <%= f.submit "Send Reset Instructions", 
+              class: "group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-300" %>
+        </div>
+      <% end %>
+
+      <!-- Additional Links -->
+      <div class="mt-6">
+        <div class="relative">
+          <div class="absolute inset-0 flex items-center">
+            <div class="w-full border-t border-gray-300"></div>
+          </div>
+          <div class="relative flex justify-center text-sm">
+            <span class="px-2 bg-white text-gray-500">Need help?</span>
+          </div>
+        </div>
+
+        <div class="mt-6 text-center space-y-3">
+          <%= link_to "Back to Sign In", new_session_path(resource_name), 
+              class: "text-sm text-green-600 hover:text-green-500 font-medium transition duration-300" %>
+          
+          <% if devise_mapping.registerable? %>
+            <div class="text-sm text-gray-600">
+              Don't have an account? 
+              <%= link_to "Sign up here", new_registration_path(resource_name), 
+                  class: "text-green-600 hover:text-green-500 font-medium transition duration-300" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Help Section -->
+    <div class="mt-6 bg-blue-50 border border-blue-200 rounded-xl p-4">
+      <div class="flex">
+        <div class="flex-shrink-0">
+          <svg class="h-5 w-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="ml-3">
+          <h3 class="text-sm font-medium text-blue-800">Need help?</h3>
+          <div class="mt-2 text-sm text-blue-700">
+            <p>Check your spam folder if you don't receive the email within a few minutes. If you continue to have issues, contact our support team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
