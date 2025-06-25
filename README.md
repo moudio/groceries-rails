@@ -2,6 +2,10 @@
 
 **GroceNow** is a modern grocery delivery platform built with **Ruby on Rails**, **Tailwind CSS**, and **Devise**. It allows users to register, log in, and order fresh groceries straight to their door with a clean and responsive interface.
 
+![app screenshot](https://res.cloudinary.com/dg8uazb1f/image/upload/v1750892708/Screenshot_2025-06-25_at_23.00.21_kunroh.png "screenshot")
+
+
+
 ---
 
 ## 🚀 Features
